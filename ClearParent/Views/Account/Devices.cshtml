@@ -1,0 +1,7 @@
+@model List<ClearParent.Data.AccountSession>
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+<!doctype html><html lang="en"><head><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Devices — ClearParent</title></head><body>
+<a href="/Account/Preferences">Preferences</a><h1>Devices and sessions</h1><p>Location is unavailable. Device information is supplied by the browser.</p>
+<table><thead><tr><th>Device</th><th>IP address</th><th>Login (UTC)</th><th>Last active (UTC)</th><th>Status</th><th>Action</th></tr></thead><tbody>
+@foreach(var item in Model){<tr><td>@item.Device</td><td>@item.IpAddress</td><td>@item.CreatedAt.ToString("u")</td><td>@item.LastActivityAt.ToString("u")</td><td>@(item.RevokedAt != null ? "Revoked" : item.LastActivityAt < DateTimeOffset.UtcNow.AddMinutes(-30) ? "Expired" : "Active")</td><td><form method="post" asp-action="Revoke"><input type="hidden" name="id" value="@item.Id"/><button type="submit">Revoke</button></form></td></tr>}
+</tbody></table><form method="post" asp-action="RevokeAll"><button type="submit">Sign out all devices</button></form></body></html>

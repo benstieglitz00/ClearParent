@@ -1,3 +1,4 @@
 <Solution>
+  <Project Path="ClearParent.Tests/ClearParent.Tests.csproj" />
   <Project Path="ClearParent/ClearParent.csproj" />
 </Solution>

@@ -1,0 +1,8 @@
+@model ClearParent.Controllers.ProfileInput
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+<!doctype html><html lang="en"><head><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Profile - ClearParent</title></head><body>
+<nav><a href="/Account/Preferences">My account</a> <a href="/Children">Children</a></nav><h1>My profile</h1><p role="status">@TempData["Saved"]</p>
+<form asp-action="Profile" method="post"><div asp-validation-summary="All" role="alert"></div>
+<p><label asp-for="FirstName">First name</label> <input asp-for="FirstName" required maxlength="100" autocomplete="given-name"/></p>
+<p><label asp-for="LastName">Last name</label> <input asp-for="LastName" required maxlength="100" autocomplete="family-name"/></p>
+<button type="submit">Save profile</button></form></body></html>

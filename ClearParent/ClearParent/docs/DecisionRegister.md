@@ -1,0 +1,553 @@
+# Extracted product decisions
+
+Source paragraph locators; no policy is approved by extraction.
+
+- P610 [1. User Management (occurrence 1)]: 1.30 Product Decisions Still Required
+- P611 [1. User Management (occurrence 1)]: Before engineering considers this specification fully locked, several policies need explicit product decisions: exact password complexity rules, lockout threshold and duration, default session timeout, Remember Me duration, verification-token expiration, password-reset expiration, MFA recovery-code count, trusted-device lifetime, Stripe upgrade/downgrade proration behavior, exact plan pricing, free-tier usage limits, trial duration, consequences of Past Due/Payment Failed/Suspended states, data-retention policy after cancellation or account deletion, default notification preferences, and whether sensitive profile changes require password or MFA re-authentication.
+- P612 [1. User Management (occurrence 1)]: Those values are deliberately left as TBD because the supplied requirements define the capabilities but do not specify those policies.
+- P1443 [2. Parenting Journal Functional Specification (occurrence 1)]: 2.39 Product Decisions Still Required
+- P1444 [2. Parenting Journal Functional Specification (occurrence 1)]: Before this module is considered implementation-locked, the following should be explicitly decided:
+- P1445 [2. Parenting Journal Functional Specification (occurrence 1)]: Maximum title length
+- P1446 [2. Parenting Journal Functional Specification (occurrence 1)]: Maximum journal entry length
+- P1447 [2. Parenting Journal Functional Specification (occurrence 1)]: Whether Description alone is required or Title + Description
+- P1448 [2. Parenting Journal Functional Specification (occurrence 1)]: Exact auto-save interval
+- P1449 [2. Parenting Journal Functional Specification (occurrence 1)]: Deleted-entry retention period
+- P1450 [2. Parenting Journal Functional Specification (occurrence 1)]: Whether deleted records can ever be permanently deleted manually
+- P1451 [2. Parenting Journal Functional Specification (occurrence 1)]: Whether categories can be deleted when already in use
+- P1452 [2. Parenting Journal Functional Specification (occurrence 1)]: Whether tags are case sensitive
+- P1453 [2. Parenting Journal Functional Specification (occurrence 1)]: Whether users can define custom mood values
+- P1454 [2. Parenting Journal Functional Specification (occurrence 1)]: Whether location stores exact GPS coordinates or only display location
+- P1455 [2. Parenting Journal Functional Specification (occurrence 1)]: Whether location should be stripped from exports by default
+- P1456 [2. Parenting Journal Functional Specification (occurrence 1)]: Whether Published entries can be returned to Draft
+- P1457 [2. Parenting Journal Functional Specification (occurrence 1)]: Whether old journal versions can be restored
+- P1458 [2. Parenting Journal Functional Specification (occurrence 1)]: Whether AI revisions create a new journal version automatically
+- P1459 [2. Parenting Journal Functional Specification (occurrence 1)]: Whether embedded images are stored as Evidence items automatically
+- P1460 [2. Parenting Journal Functional Specification (occurrence 1)]: Maximum number of children, tags, categories, evidence items, and related entries per journal record
+- P1461 [2. Parenting Journal Functional Specification (occurrence 1)]: Whether draft auto-saves should generate audit records
+- P1462 [2. Parenting Journal Functional Specification (occurrence 1)]: How Archived entries should behave in Timeline and standard reports
+- P1463 [2. Parenting Journal Functional Specification (occurrence 1)]: Whether Critical importance creates notifications or is display-only
+- P1464 [2. Parenting Journal Functional Specification (occurrence 1)]: How duplicate detection thresholds should be configured
+- P2406 [3. Calendar Functional Specification (occurrence 1)]: 3.57 Product Decisions Still Required
+- P2407 [3. Calendar Functional Specification (occurrence 1)]: Before the Calendar specification is implementation-locked, the following should be finalized:
+- P2408 [3. Calendar Functional Specification (occurrence 1)]: Exact list of event statuses
+- P2409 [3. Calendar Functional Specification (occurrence 1)]: Whether every event type may use custom statuses
+- P2410 [3. Calendar Functional Specification (occurrence 1)]: Default Calendar view
+- P2411 [3. Calendar Functional Specification (occurrence 1)]: Whether Yearly View is MVP
+- P2412 [3. Calendar Functional Specification (occurrence 1)]: Default Upcoming Events range
+- P2413 [3. Calendar Functional Specification (occurrence 1)]: Required versus optional End Time
+- P2414 [3. Calendar Functional Specification (occurrence 1)]: Whether events may span multiple days
+- P2415 [3. Calendar Functional Specification (occurrence 1)]: Default event duration
+- P2416 [3. Calendar Functional Specification (occurrence 1)]: Default time increments in the UI
+- P2417 [3. Calendar Functional Specification (occurrence 1)]: Definition of a Late parenting exchange
+- P2418 [3. Calendar Functional Specification (occurrence 1)]: How parenting-plan overrides are entered and displayed
+- P2419 [3. Calendar Functional Specification (occurrence 1)]: Whether Parenting Plan schedules are manually entered or automatically parsed
+- P2420 [3. Calendar Functional Specification (occurrence 1)]: Whether Calendar or Parenting Time owns canonical parenting schedule records
+- P2421 [3. Calendar Functional Specification (occurrence 1)]: Whether Calendar or Contacts owns provider/attorney/teacher details
+- P2422 [3. Calendar Functional Specification (occurrence 1)]: Which events automatically appear in Timeline
+- P2423 [3. Calendar Functional Specification (occurrence 1)]: Whether cancelled events remain visible by default
+- P2424 [3. Calendar Functional Specification (occurrence 1)]: Soft-delete retention period
+- P2425 [3. Calendar Functional Specification (occurrence 1)]: Whether recurring event edits support "this and future"
+- P2426 [3. Calendar Functional Specification (occurrence 1)]: Maximum recurrence horizon
+- P2427 [3. Calendar Functional Specification (occurrence 1)]: Maximum number of reminders per event
+- P2428 [3. Calendar Functional Specification (occurrence 1)]: Default reminder settings
+- P2429 [3. Calendar Functional Specification (occurrence 1)]: Whether reminder delivery requires confirmed event status
+- P2430 [3. Calendar Functional Specification (occurrence 1)]: Whether follow-up tasks are stored directly by Calendar or a future Tasks module
+- P2431 [3. Calendar Functional Specification (occurrence 1)]: Exact handling of overlapping parenting events
+- P2432 [3. Calendar Functional Specification (occurrence 1)]: Time-zone storage strategy for MVP
+- P2433 [3. Calendar Functional Specification (occurrence 1)]: Whether users may manually create holidays or select from a predefined holiday library
+- P2434 [3. Calendar Functional Specification (occurrence 1)]: Whether changing a recurring parenting schedule automatically updates future events
+- P2435 [3. Calendar Functional Specification (occurrence 1)]: Whether completed Calendar events automatically prompt the user to create a Journal entry
+- P3345 [4. Evidence Management (occurrence 1)]: 4.32 Product Decisions Still Required
+- P3347 [4. Evidence Management (occurrence 1)]: Before implementation is locked, Product shall define:
+- P3348 [4. Evidence Management (occurrence 1)]: • Maximum file size by subscription tier.
+- P3349 [4. Evidence Management (occurrence 1)]: • Total storage quotas.
+- P3350 [4. Evidence Management (occurrence 1)]: • Allowed MIME types and extensions.
+- P3351 [4. Evidence Management (occurrence 1)]: • Maximum concurrent uploads.
+- P3352 [4. Evidence Management (occurrence 1)]: • ZIP extraction and archive limits.
+- P3353 [4. Evidence Management (occurrence 1)]: • Malware scanning provider and quarantine policy.
+- P3354 [4. Evidence Management (occurrence 1)]: • OCR provider and supported languages.
+- P3355 [4. Evidence Management (occurrence 1)]: • OCR confidence and retry policy.
+- P3356 [4. Evidence Management (occurrence 1)]: • AI provider and model selection.
+- P3357 [4. Evidence Management (occurrence 1)]: • AI usage limits and cost controls.
+- P3358 [4. Evidence Management (occurrence 1)]: • Whether AI analysis is automatic or user-triggered by plan.
+- P3359 [4. Evidence Management (occurrence 1)]: • Duplicate similarity thresholds.
+- P3360 [4. Evidence Management (occurrence 1)]: • Search ranking rules.
+- P3361 [4. Evidence Management (occurrence 1)]: • Whether search history and saved searches are included.
+- P3362 [4. Evidence Management (occurrence 1)]: • Tag normalization and case-sensitivity rules.
+- P3363 [4. Evidence Management (occurrence 1)]: • Category deletion and merge behavior.
+- P3364 [4. Evidence Management (occurrence 1)]: • Maximum number of relationships per evidence item.
+- P3365 [4. Evidence Management (occurrence 1)]: • Maximum versions retained.
+- P3366 [4. Evidence Management (occurrence 1)]: • Version retention policy.
+- P3367 [4. Evidence Management (occurrence 1)]: • Soft-delete retention period.
+- P3368 [4. Evidence Management (occurrence 1)]: • Permanent deletion rules.
+- P3369 [4. Evidence Management (occurrence 1)]: • Legal-hold behavior.
+- P3370 [4. Evidence Management (occurrence 1)]: • Exact chain-of-custody events exposed to users.
+- P3371 [4. Evidence Management (occurrence 1)]: • Whether preview activity should always be audited.
+- P3372 [4. Evidence Management (occurrence 1)]: • External sharing permissions.
+- P3373 [4. Evidence Management (occurrence 1)]: • Watermarking and download restrictions.
+- P3374 [4. Evidence Management (occurrence 1)]: • Whether archived evidence appears in AI search by default.
+- P3375 [4. Evidence Management (occurrence 1)]: • Which evidence uploads automatically create Timeline events.
+- P3376 [4. Evidence Management (occurrence 1)]: • Whether external URLs are snapshotted or stored only as references.
+- P4139 [5. Communication Management (occurrence 1)]: 5.27 Product Decisions Still Required
+- P4141 [5. Communication Management (occurrence 1)]: Before implementation is locked, Product shall define:
+- P4143 [5. Communication Management (occurrence 1)]: • Exact communication types supported in MVP.
+- P4144 [5. Communication Management (occurrence 1)]: • Whether the module stores individual messages or only imported communication artifacts.
+- P4145 [5. Communication Management (occurrence 1)]: • Whether conversation threads are separate entities.
+- P4146 [5. Communication Management (occurrence 1)]: • How sender and recipient identity is normalized to Contacts.
+- P4147 [5. Communication Management (occurrence 1)]: • OFW export formats that will be officially supported.
+- P4148 [5. Communication Management (occurrence 1)]: • Text-message export formats that will be officially supported.
+- P4149 [5. Communication Management (occurrence 1)]: • Whether Gmail and Outlook are MVP or future-only integrations.
+- P4150 [5. Communication Management (occurrence 1)]: • Maximum file size and total storage limits.
+- P4151 [5. Communication Management (occurrence 1)]: • Duplicate similarity thresholds.
+- P4152 [5. Communication Management (occurrence 1)]: • OCR provider and supported languages.
+- P4153 [5. Communication Management (occurrence 1)]: • Speech-to-text provider and supported languages.
+- P4154 [5. Communication Management (occurrence 1)]: • AI provider, model selection, and usage limits.
+- P4155 [5. Communication Management (occurrence 1)]: • Whether AI analysis is automatic or user-triggered.
+- P4156 [5. Communication Management (occurrence 1)]: • Whether call logs are informational records or treated as evidence artifacts.
+- P4157 [5. Communication Management (occurrence 1)]: • Whether communication screenshots are indexed as Communications, Evidence, or both.
+- P4158 [5. Communication Management (occurrence 1)]: • Whether archived communications appear in AI search by default.
+- P4159 [5. Communication Management (occurrence 1)]: • Which communication imports automatically create Timeline events.
+- P4160 [5. Communication Management (occurrence 1)]: • Soft-delete retention period.
+- P4161 [5. Communication Management (occurrence 1)]: • Permanent deletion rules.
+- P4162 [5. Communication Management (occurrence 1)]: • Legal-hold behavior.
+- P4163 [5. Communication Management (occurrence 1)]: • External sharing permissions.• Whether external URLs are snapshotted or stored only as references.
+- P4164 [5. Communication Management (occurrence 1)]: • Whether preview activity is always audited
+- P5054 [7. Expense Tracking (occurrence 1)]: 7.26 Product Decisions Still Required
+- P5055 [7. Expense Tracking (occurrence 1)]: Before implementation is locked, Product shall define:
+- P5057 [7. Expense Tracking (occurrence 1)]: • Required expense fields.
+- P5058 [7. Expense Tracking (occurrence 1)]: • Default currency behavior.
+- P5059 [7. Expense Tracking (occurrence 1)]: • Multi-currency support requirements.
+- P5060 [7. Expense Tracking (occurrence 1)]: • Whether negative expenses or adjustment records are supported.
+- P5061 [7. Expense Tracking (occurrence 1)]: • Custom category limits and behavior.
+- P5062 [7. Expense Tracking (occurrence 1)]: • Reimbursement percentage and allocation rules.
+- P5063 [7. Expense Tracking (occurrence 1)]: • Whether one reimbursement may cover multiple expenses.
+- P5064 [7. Expense Tracking (occurrence 1)]: • Overpayment behavior.
+- P5065 [7. Expense Tracking (occurrence 1)]: • Overdue calculation rules.
+- P5066 [7. Expense Tracking (occurrence 1)]: • Default reimbursement due dates.
+- P5067 [7. Expense Tracking (occurrence 1)]: • Recurring-series edit behavior.
+- P5068 [7. Expense Tracking (occurrence 1)]: • Supported receipt file formats and size limits.
+- P5069 [7. Expense Tracking (occurrence 1)]: • OCR provider and confidence thresholds.
+- P5070 [7. Expense Tracking (occurrence 1)]: • Duplicate-expense detection thresholds.
+- P5071 [7. Expense Tracking (occurrence 1)]: • Tax-deductible field behavior and disclaimers.
+- P5072 [7. Expense Tracking (occurrence 1)]: • Financial retention periods.
+- P5073 [7. Expense Tracking (occurrence 1)]: • Soft-delete retention period.
+- P5074 [7. Expense Tracking (occurrence 1)]: • Export formats.
+- P5075 [7. Expense Tracking (occurrence 1)]: • Whether expense creation automatically creates Timeline events.
+- P5076 [7. Expense Tracking (occurrence 1)]: • Whether reimbursement reminders are enabled by default.
+- P5077 [7. Expense Tracking (occurrence 1)]: • Whether shared reimbursement workflows are MVP or future scope.
+- P5752 [8. Timeline (occurrence 1)]: 8.26 Product Decisions Still Required
+- P5753 [8. Timeline (occurrence 1)]: Before implementation is locked, Product shall define:
+- P5754 [8. Timeline (occurrence 1)]: • Which source actions create Timeline events.
+- P5755 [8. Timeline (occurrence 1)]: • Whether every source record creates one Timeline event or multiple lifecycle events.
+- P5756 [8. Timeline (occurrence 1)]: • Timeline event deduplication keys.
+- P5757 [8. Timeline (occurrence 1)]: • Canonical event timestamp rules.
+- P5758 [8. Timeline (occurrence 1)]: • Date-only event ordering behavior.
+- P5759 [8. Timeline (occurrence 1)]: • Time-zone handling for imported events.
+- P5760 [8. Timeline (occurrence 1)]: • Source status normalization.
+- P5761 [8. Timeline (occurrence 1)]: • Importance levels and whether they are user-editable.
+- P5762 [8. Timeline (occurrence 1)]: • Event-category taxonomy.
+- P5763 [8. Timeline (occurrence 1)]: • Icon and color mapping.
+- P5764 [8. Timeline (occurrence 1)]: • Which Notifications are historically significant enough for Timeline inclusion.
+- P5765 [8. Timeline (occurrence 1)]: • Whether AI-generated reports automatically create Timeline events.
+- P5766 [8. Timeline (occurrence 1)]: • Whether direct User Notes are MVP.
+- P5767 [8. Timeline (occurrence 1)]: • Whether users can manually add relationships between Timeline events and source records.
+- P5768 [8. Timeline (occurrence 1)]: • Whether users can manually hide Timeline events without changing source records.
+- P5769 [8. Timeline (occurrence 1)]: • Saved filter behavior.
+- P5770 [8. Timeline (occurrence 1)]: • Saved view behavior.
+- P5771 [8. Timeline (occurrence 1)]: • Default Timeline view.
+- P5772 [8. Timeline (occurrence 1)]: • Timeline retention policy.
+- P5773 [8. Timeline (occurrence 1)]: • Search indexing strategy.
+- P5774 [8. Timeline (occurrence 1)]: • Maximum export size.
+- P5775 [8. Timeline (occurrence 1)]: • Report export formats.
+- P5776 [8. Timeline (occurrence 1)]: • Whether shared Timeline views are MVP or future scope.
+- P6579 [9. Search (occurrence 1)]: 9.27 Product Decisions Still Required
+- P6580 [9. Search (occurrence 1)]: Before implementation is locked, Product shall define:
+- P6581 [9. Search (occurrence 1)]: • Primary search engine and indexing architecture.
+- P6582 [9. Search (occurrence 1)]: • Whether Search Documents are stored as a separate projection or generated dynamically.
+- P6583 [9. Search (occurrence 1)]: • Lexical-first, semantic-first, or hybrid default ranking.
+- P6584 [9. Search (occurrence 1)]: • Exact relevance-ranking rules.
+- P6585 [9. Search (occurrence 1)]: • Field weighting.
+- P6586 [9. Search (occurrence 1)]: • Stemming and synonym behavior.
+- P6587 [9. Search (occurrence 1)]: • Partial-word minimum length.
+- P6588 [9. Search (occurrence 1)]: • Wildcard syntax and limits.
+- P6589 [9. Search (occurrence 1)]: • Boolean syntax supported in MVP.
+- P6590 [9. Search (occurrence 1)]: • Natural-language parser responsibilities.
+- P6591 [9. Search (occurrence 1)]: • Semantic embedding provider and model.
+- P6592 [9. Search (occurrence 1)]: • Embedding refresh rules.
+- P6593 [9. Search (occurrence 1)]: • OCR confidence threshold for indexing.
+- P6594 [9. Search (occurrence 1)]: • Whether AI summaries are searchable by default.
+- P6595 [9. Search (occurrence 1)]: • Whether AI-generated content influences ranking.
+- P6596 [9. Search (occurrence 1)]: • Maximum indexing delay after record creation or update.
+- P6597 [9. Search (occurrence 1)]: • Search-result page size.
+- P6598 [9. Search (occurrence 1)]: • Maximum query complexity.
+- P6599 [9. Search (occurrence 1)]: • Search-as-you-type minimum characters and debounce interval.
+- P6600 [9. Search (occurrence 1)]: • Maximum suggestion count.
+- P6601 [9. Search (occurrence 1)]: • Default sort order.
+- P6602 [9. Search (occurrence 1)]: • Available deterministic sort orders.
+- P6603 [9. Search (occurrence 1)]: • Saved Searches included in MVP or future scope.
+- P6604 [9. Search (occurrence 1)]: • Search History included in MVP or future scope.
+- P6605 [9. Search (occurrence 1)]: • Search History retention period.
+- P6606 [9. Search (occurrence 1)]: • Whether users can disable Search History.
+- P6607 [9. Search (occurrence 1)]: • Whether sensitive queries are stored in Search History.
+- P6608 [9. Search (occurrence 1)]: • Whether searches are written to the Audit Log.
+- P6609 [9. Search (occurrence 1)]: • Search analytics retention and privacy rules.
+- P6610 [9. Search (occurrence 1)]: • Whether result counts are hidden when they could reveal restricted data.
+- P6611 [9. Search (occurrence 1)]: • Search index retention behavior after soft deletion.
+- P6612 [9. Search (occurrence 1)]: • Reindex and disaster-recovery strategy.
+- P6613 [9. Search (occurrence 1)]: • Search export capabilities.
+- P6614 [9. Search (occurrence 1)]: • Voice search future architecture.
+- P6615 [9. Search (occurrence 1)]: • Facial-recognition search privacy and consent requirements.
+- P6616 [9. Search (occurrence 1)]: • Cross-case search authorization model for legal professionals.
+- P7421 [9. Search (occurrence 2)]: 9.27 Product Decisions Still Required
+- P7422 [9. Search (occurrence 2)]: Before implementation is locked, Product shall define:
+- P7423 [9. Search (occurrence 2)]: • Primary search engine and indexing architecture.
+- P7424 [9. Search (occurrence 2)]: • Whether Search Documents are stored as a separate projection or generated dynamically.
+- P7425 [9. Search (occurrence 2)]: • Lexical-first, semantic-first, or hybrid default ranking.
+- P7426 [9. Search (occurrence 2)]: • Exact relevance-ranking rules.
+- P7427 [9. Search (occurrence 2)]: • Field weighting.
+- P7428 [9. Search (occurrence 2)]: • Stemming and synonym behavior.
+- P7429 [9. Search (occurrence 2)]: • Partial-word minimum length.
+- P7430 [9. Search (occurrence 2)]: • Wildcard syntax and limits.
+- P7431 [9. Search (occurrence 2)]: • Boolean syntax supported in MVP.
+- P7432 [9. Search (occurrence 2)]: • Natural-language parser responsibilities.
+- P7433 [9. Search (occurrence 2)]: • Semantic embedding provider and model.
+- P7434 [9. Search (occurrence 2)]: • Embedding refresh rules.
+- P7435 [9. Search (occurrence 2)]: • OCR confidence threshold for indexing.
+- P7436 [9. Search (occurrence 2)]: • Whether AI summaries are searchable by default.
+- P7437 [9. Search (occurrence 2)]: • Whether AI-generated content influences ranking.
+- P7438 [9. Search (occurrence 2)]: • Maximum indexing delay after record creation or update.
+- P7439 [9. Search (occurrence 2)]: • Search-result page size.
+- P7440 [9. Search (occurrence 2)]: • Maximum query complexity.
+- P7441 [9. Search (occurrence 2)]: • Search-as-you-type minimum characters and debounce interval.
+- P7442 [9. Search (occurrence 2)]: • Maximum suggestion count.
+- P7443 [9. Search (occurrence 2)]: • Default sort order.
+- P7444 [9. Search (occurrence 2)]: • Available deterministic sort orders.
+- P7445 [9. Search (occurrence 2)]: • Saved Searches included in MVP or future scope.
+- P7446 [9. Search (occurrence 2)]: • Search History included in MVP or future scope.
+- P7447 [9. Search (occurrence 2)]: • Search History retention period.
+- P7448 [9. Search (occurrence 2)]: • Whether users can disable Search History.
+- P7449 [9. Search (occurrence 2)]: • Whether sensitive queries are stored in Search History.
+- P7450 [9. Search (occurrence 2)]: • Whether searches are written to the Audit Log.
+- P7451 [9. Search (occurrence 2)]: • Search analytics retention and privacy rules.
+- P7452 [9. Search (occurrence 2)]: • Whether result counts are hidden when they could reveal restricted data.
+- P7453 [9. Search (occurrence 2)]: • Search index retention behavior after soft deletion.
+- P7454 [9. Search (occurrence 2)]: • Reindex and disaster-recovery strategy.
+- P7455 [9. Search (occurrence 2)]: • Search export capabilities.
+- P7456 [9. Search (occurrence 2)]: • Voice search future architecture.
+- P7457 [9. Search (occurrence 2)]: • Facial-recognition search privacy and consent requirements.
+- P7458 [9. Search (occurrence 2)]: • Cross-case search authorization model for legal professionals.
+- P8336 [10. AI Assistant (occurrence 1)]: 10.33 Product Decisions Still Required
+- P8337 [10. AI Assistant (occurrence 1)]: Before implementation is locked, Product shall define:
+- P8338 [10. AI Assistant (occurrence 1)]: • AI provider or providers.
+- P8339 [10. AI Assistant (occurrence 1)]: • Model selection strategy.
+- P8340 [10. AI Assistant (occurrence 1)]: • Whether multiple model tiers are supported.
+- P8341 [10. AI Assistant (occurrence 1)]: • Maximum prompt and context size.
+- P8342 [10. AI Assistant (occurrence 1)]: • Retrieval chunking strategy.
+- P8343 [10. AI Assistant (occurrence 1)]: • Semantic embedding provider and model.
+- P8344 [10. AI Assistant (occurrence 1)]: • Source-ranking and reranking rules.
+- P8345 [10. AI Assistant (occurrence 1)]: • Maximum number of source records supplied to an AI request.
+- P8346 [10. AI Assistant (occurrence 1)]: • Conversation retention period.
+- P8347 [10. AI Assistant (occurrence 1)]: • Whether users can permanently delete AI conversation history.
+- P8348 [10. AI Assistant (occurrence 1)]: • Prompt and response audit-retention requirements.
+- P8349 [10. AI Assistant (occurrence 1)]: • Whether AI prompts are stored verbatim in audit logs.
+- P8350 [10. AI Assistant (occurrence 1)]: • Third-party provider data-retention settings.
+- P8351 [10. AI Assistant (occurrence 1)]: • Whether provider training on customer data is permitted; production default should require an explicit approved policy.
+- P8352 [10. AI Assistant (occurrence 1)]: • Geographic data-processing requirements.
+- P8353 [10. AI Assistant (occurrence 1)]: • AI feature availability by subscription tier.
+- P8354 [10. AI Assistant (occurrence 1)]: • Usage limits and rate limits.
+- P8355 [10. AI Assistant (occurrence 1)]: • Maximum generated report size.
+- P8356 [10. AI Assistant (occurrence 1)]: • Summary length definitions for Brief, Standard, and Detailed.
+- P8357 [10. AI Assistant (occurrence 1)]: • Confidence-display model for classifications and extraction.
+- P8358 [10. AI Assistant (occurrence 1)]: • Thresholds for duplicate and related-record suggestions.
+- P8359 [10. AI Assistant (occurrence 1)]: • Whether AI-generated tags or categories may be bulk accepted.
+- P8360 [10. AI Assistant (occurrence 1)]: • Whether AI summaries are automatically indexed by Search.
+- P8361 [10. AI Assistant (occurrence 1)]: • Whether AI-generated artifacts create Timeline events.
+- P8362 [10. AI Assistant (occurrence 1)]: • Whether AI-generated artifacts are retained after their source records are deleted.
+- P8363 [10. AI Assistant (occurrence 1)]: • Whether the AI may proactively surface recommendations without a user prompt.
+- P8364 [10. AI Assistant (occurrence 1)]: • Parenting-plan interpretation guardrails.
+- P8365 [10. AI Assistant (occurrence 1)]: • Exact legal-disclaimer presentation requirements.
+- P8366 [10. AI Assistant (occurrence 1)]: • Whether AI conversation sharing is supported.
+- P8367 [10. AI Assistant (occurrence 1)]: • Whether AI-generated content may be exported independently of reports.
+- P8368 [10. AI Assistant (occurrence 1)]: • Exact audit events required for AI actions.
+- P8369 [10. AI Assistant (occurrence 1)]: • Maximum acceptable latency for interactive requests.
+- P8370 [10. AI Assistant (occurrence 1)]: • Long-running task timeout and retry behavior.
+- P8371 [10. AI Assistant (occurrence 1)]: • Cost-control and quota behavior.
+- P8372 [10. AI Assistant (occurrence 1)]: • Model fallback behavior during provider outages.
+- P9092 [11. Report Builder (occurrence 1)]: 11.31 Product Decisions Still Required
+- P9093 [11. Report Builder (occurrence 1)]: Before implementation is locked, Product, Engineering, Security, and Legal shall define:
+- P9094 [11. Report Builder (occurrence 1)]: • Exact report status lifecycle.
+- P9095 [11. Report Builder (occurrence 1)]: • Which report templates are included in MVP.
+- P9096 [11. Report Builder (occurrence 1)]: • Template customization boundaries.
+- P9097 [11. Report Builder (occurrence 1)]: • Maximum report size.
+- P9098 [11. Report Builder (occurrence 1)]: • Maximum number of source records.
+- P9099 [11. Report Builder (occurrence 1)]: • Maximum number and total size of exhibits.
+- P9100 [11. Report Builder (occurrence 1)]: • Whether report generation uses live source data or a generation-time snapshot.
+- P9101 [11. Report Builder (occurrence 1)]: • Exact behavior when source records are later edited or deleted.
+- P9102 [11. Report Builder (occurrence 1)]: • Default chronology sorting rules for records without time values.
+- P9103 [11. Report Builder (occurrence 1)]: • Duplicate source-record behavior across sections.
+- P9104 [11. Report Builder (occurrence 1)]: • Default section ordering for each template.
+- P9105 [11. Report Builder (occurrence 1)]: • Supported custom section types.
+- P9106 [11. Report Builder (occurrence 1)]: • PDF rendering engine.
+- P9107 [11. Report Builder (occurrence 1)]: • Microsoft Word rendering engine.
+- P9108 [11. Report Builder (occurrence 1)]: • HTML, RTF, Plain Text, and CSV MVP timing.
+- P9109 [11. Report Builder (occurrence 1)]: • Password-protected export implementation.
+- P9110 [11. Report Builder (occurrence 1)]: • Watermark behavior.
+- P9111 [11. Report Builder (occurrence 1)]: • Confidentiality notice defaults.
+- P9112 [11. Report Builder (occurrence 1)]: • Redaction MVP scope.
+- P9113 [11. Report Builder (occurrence 1)]: • Sharing-link expiration defaults.
+- P9114 [11. Report Builder (occurrence 1)]: • Whether emailed reports are sent directly by the platform.
+- P9115 [11. Report Builder (occurrence 1)]: • Download-tracking detail.
+- P9116 [11. Report Builder (occurrence 1)]: • Finalization locking behavior.
+- P9117 [11. Report Builder (occurrence 1)]: • Report version retention period.
+- P9118 [11. Report Builder (occurrence 1)]: • Export retention period.
+- P9119 [11. Report Builder (occurrence 1)]: • Whether exports remain downloadable after source deletion.
+- P9120 [11. Report Builder (occurrence 1)]: • AI model/provider used for report assistance.
+- P9121 [11. Report Builder (occurrence 1)]: • AI-generated conclusion guardrails.
+- P9122 [11. Report Builder (occurrence 1)]: • Whether AI summaries become independently searchable.
+- P9123 [11. Report Builder (occurrence 1)]: • Whether reports create Timeline events.
+- P9124 [11. Report Builder (occurrence 1)]: • Whether report generation can run on a schedule.
+- P9125 [11. Report Builder (occurrence 1)]: • Whether report contents may be shared with users who lack access to the original records.
+- P9126 [11. Report Builder (occurrence 1)]: • Exact audit events and retention requirements.
+- P9127 [11. Report Builder (occurrence 1)]: • Accessibility requirements for generated reports.
+- P9128 [11. Report Builder (occurrence 1)]: • Localization and language support.
+- P9129 [11. Report Builder (occurrence 1)]: • Future jurisdiction-specific legal templates.
+- P9794 [12. Dashboard (occurrence 1)]: 12.30 Product Decisions Still Required
+- P9795 [12. Dashboard (occurrence 1)]: Before implementation is locked, Product and Engineering shall define:
+- P9796 [12. Dashboard (occurrence 1)]: • Default Dashboard layout.
+- P9797 [12. Dashboard (occurrence 1)]: • Which widgets are included in MVP.
+- P9798 [12. Dashboard (occurrence 1)]: • Minimum and maximum widget sizes.
+- P9799 [12. Dashboard (occurrence 1)]: • Layout grid behavior.
+- P9800 [12. Dashboard (occurrence 1)]: • Whether multiple saved layouts are MVP or Future Scope.
+- P9801 [12. Dashboard (occurrence 1)]: • Default date range.
+- P9802 [12. Dashboard (occurrence 1)]: • Custom date-range support.
+- P9803 [12. Dashboard (occurrence 1)]: • Default-child behavior.
+- P9804 [12. Dashboard (occurrence 1)]: • Exact current-status fields shown by default.
+- P9805 [12. Dashboard (occurrence 1)]: • Recent-activity time window.
+- P9806 [12. Dashboard (occurrence 1)]: • Recent-activity sort precedence.
+- P9807 [12. Dashboard (occurrence 1)]: • Maximum upcoming-event count.
+- P9808 [12. Dashboard (occurrence 1)]: • Task source-of-truth model.
+- P9809 [12. Dashboard (occurrence 1)]: • Task postponement rules.
+- P9810 [12. Dashboard (occurrence 1)]: • Whether the Dashboard has native tasks or only references source-module tasks.
+- P9811 [12. Dashboard (occurrence 1)]: • Whether recent searches are displayed by default.
+- P9812 [12. Dashboard (occurrence 1)]: • Which charts are included in MVP.
+- P9813 [12. Dashboard (occurrence 1)]: • Chart aggregation periods.
+- P9814 [12. Dashboard (occurrence 1)]: • Dashboard refresh interval.
+- P9815 [12. Dashboard (occurrence 1)]: • Whether users can manually refresh.
+- P9816 [12. Dashboard (occurrence 1)]: • Data-caching duration.
+- P9817 [12. Dashboard (occurrence 1)]: • Stale-data indicators.
+- P9818 [12. Dashboard (occurrence 1)]: • Whether widget-specific filters override global filters.
+- P9819 [12. Dashboard (occurrence 1)]: • Theme and color-scheme customization scope.
+- P9820 [12. Dashboard (occurrence 1)]: • AI Insight default state.
+- P9821 [12. Dashboard (occurrence 1)]: • Whether AI Insights are proactively generated or only displayed when already available.
+- P9822 [12. Dashboard (occurrence 1)]: • AI Insight dismissal and retention behavior.
+- P9823 [12. Dashboard (occurrence 1)]: • Whether Quick Actions vary by role or subscription tier.
+- P9824 [12. Dashboard (occurrence 1)]: • Mobile Dashboard MVP scope.
+- P9825 [12. Dashboard (occurrence 1)]: • Dashboard audit events.
+- P9826 [12. Dashboard (occurrence 1)]: • Performance targets.
+- P9827 [12. Dashboard (occurrence 1)]: • Accessibility requirements.
+- P9828 [12. Dashboard (occurrence 1)]: • Shared/team dashboard roadmap.
+- P10636 [13. Notifications (occurrence 1)]: 13.38 Product Decisions Still Required
+- P10637 [13. Notifications (occurrence 1)]: Before implementation is locked, Product, Engineering, Security, and Legal shall define:
+- P10638 [13. Notifications (occurrence 1)]: • Exact notification lifecycle states.
+- P10639 [13. Notifications (occurrence 1)]: • Which notification categories are enabled by default.
+- P10640 [13. Notifications (occurrence 1)]: • Mandatory notifications that users cannot disable.
+- P10641 [13. Notifications (occurrence 1)]: • In-app Notification Center retention period.
+- P10642 [13. Notifications (occurrence 1)]: • Notification deletion vs archival behavior.
+- P10643 [13. Notifications (occurrence 1)]: • Default reminder lead times.
+- P10644 [13. Notifications (occurrence 1)]: • Maximum number of reminder lead times per event.
+- P10645 [13. Notifications (occurrence 1)]: • Recurring reminder capabilities.
+- P10646 [13. Notifications (occurrence 1)]: • Medication Reminder MVP status.
+- P10647 [13. Notifications (occurrence 1)]: • Medication Reminder recurrence rules.
+- P10648 [13. Notifications (occurrence 1)]: • Quiet-hour default values.
+- P10649 [13. Notifications (occurrence 1)]: • Categories permitted to bypass quiet hours.
+- P10650 [13. Notifications (occurrence 1)]: • User time-zone precedence.
+- P10651 [13. Notifications (occurrence 1)]: • Push provider and mobile-platform strategy.
+- P10652 [13. Notifications (occurrence 1)]: • Email provider.
+- P10653 [13. Notifications (occurrence 1)]: • Desktop notification browser/platform support.
+- P10654 [13. Notifications (occurrence 1)]: • SMS roadmap and provider.
+- P10655 [13. Notifications (occurrence 1)]: • Delivery retry policy.
+- P10656 [13. Notifications (occurrence 1)]: • Maximum retry count.
+- P10657 [13. Notifications (occurrence 1)]: • Channel fallback behavior.
+- P10658 [13. Notifications (occurrence 1)]: • Notification de-duplication window.
+- P10659 [13. Notifications (occurrence 1)]: • Smart-grouping rules and time windows.
+- P10660 [13. Notifications (occurrence 1)]: • Digest generation time.
+- P10661 [13. Notifications (occurrence 1)]: • Daily Digest default state.
+- P10662 [13. Notifications (occurrence 1)]: • Weekly Digest default state.
+- P10663 [13. Notifications (occurrence 1)]: • Digest content-selection rules.
+- P10664 [13. Notifications (occurrence 1)]: • Whether digests suppress individual notifications.
+- P10665 [13. Notifications (occurrence 1)]: • Emergency Notifications Only semantics.
+- P10666 [13. Notifications (occurrence 1)]: • Per-record notification preferences.
+- P10667 [13. Notifications (occurrence 1)]: • Category/global preference precedence.
+- P10668 [13. Notifications (occurrence 1)]: • Notification priority/severity model.
+- P10669 [13. Notifications (occurrence 1)]: • Lock-screen redaction defaults.
+- P10670 [13. Notifications (occurrence 1)]: • Email content redaction defaults.
+- P10671 [13. Notifications (occurrence 1)]: • Push payload data-minimization rules.
+- P10672 [13. Notifications (occurrence 1)]: • Whether AI may proactively create reminders.
+- P10673 [13. Notifications (occurrence 1)]: • AI notification default state.
+- P10674 [13. Notifications (occurrence 1)]: • AI notification confidence/threshold rules.
+- P10675 [13. Notifications (occurrence 1)]: • Whether Report Ready is a system or AI notification.
+- P10676 [13. Notifications (occurrence 1)]: • Whether notification history creates Timeline events.
+- P10677 [13. Notifications (occurrence 1)]: • Which read/unread actions are auditable.
+- P10678 [13. Notifications (occurrence 1)]: • Notification-provider data-retention rules.
+- P10679 [13. Notifications (occurrence 1)]: • Delivery latency targets.
+- P10680 [13. Notifications (occurrence 1)]: • Scheduled-job architecture.
+- P10681 [13. Notifications (occurrence 1)]: • Accessibility requirements.
+- P10682 [13. Notifications (occurrence 1)]: • Localization and language support.
+- P11356 [14. Security (occurrence 1)]: 14.32 Product Decisions Still Required
+- P11357 [14. Security (occurrence 1)]: Before implementation is locked, Product, Security, Engineering, and Legal shall define:
+- P11358 [14. Security (occurrence 1)]: • Exact MVP authentication methods.
+- P11359 [14. Security (occurrence 1)]: • MFA availability and whether MFA is optional or mandatory for specific users or actions.
+- P11360 [14. Security (occurrence 1)]: • Password policy and account-lockout thresholds.
+- P11361 [14. Security (occurrence 1)]: • Session inactivity and absolute lifetime values.
+- P11362 [14. Security (occurrence 1)]: • Remember-me duration.
+- P11363 [14. Security (occurrence 1)]: • Trusted-device behavior and lifetime.
+- P11364 [14. Security (occurrence 1)]: • Reauthentication requirements for sensitive operations.
+- P11365 [14. Security (occurrence 1)]: • Initial role and permission matrix.
+- P11366 [14. Security (occurrence 1)]: • Organization and external-sharing permission model.
+- P11367 [14. Security (occurrence 1)]: • Audit event inventory and required before/after detail.
+- P11368 [14. Security (occurrence 1)]: • Audit retention duration.
+- P11369 [14. Security (occurrence 1)]: • Tamper-resistance architecture for audit records.
+- P11370 [14. Security (occurrence 1)]: • Versioned record types and version-retention duration.
+- P11371 [14. Security (occurrence 1)]: • Deleted-item recovery duration by record type.
+- P11372 [14. Security (occurrence 1)]: • Permanent-deletion workflow and confirmation requirements.
+- P11373 [14. Security (occurrence 1)]: • Legal-hold requirements.
+- P11374 [14. Security (occurrence 1)]: • Backup frequency and retention.
+- P11375 [14. Security (occurrence 1)]: • Recovery Point Objective.
+- P11376 [14. Security (occurrence 1)]: • Recovery Time Objective.
+- P11377 [14. Security (occurrence 1)]: • Disaster-recovery test cadence.
+- P11378 [14. Security (occurrence 1)]: • Key-management provider and rotation policy.
+- P11379 [14. Security (occurrence 1)]: • Customer-managed encryption-key roadmap.
+- P11380 [14. Security (occurrence 1)]: • File-malware scanning provider and workflow.
+- P11381 [14. Security (occurrence 1)]: • Rate-limit thresholds.
+- P11382 [14. Security (occurrence 1)]: • Security-event detection thresholds.
+- P11383 [14. Security (occurrence 1)]: • New-device and new-location detection behavior.
+- P11384 [14. Security (occurrence 1)]: • Geographic location collection and privacy policy.
+- P11385 [14. Security (occurrence 1)]: • Which security events trigger immediate notifications.
+- P11386 [14. Security (occurrence 1)]: • Export reauthentication and MFA requirements.
+- P11387 [14. Security (occurrence 1)]: • Secure-sharing expiration and revocation defaults.
+- P11388 [14. Security (occurrence 1)]: • Password-protected report implementation.
+- P11389 [14. Security (occurrence 1)]: • Redaction and watermarking scope.
+- P11390 [14. Security (occurrence 1)]: • AI-provider security and data-retention requirements.
+- P11391 [14. Security (occurrence 1)]: • Compliance targets and sequencing.
+- P11392 [14. Security (occurrence 1)]: • Security incident response process.
+- P11393 [14. Security (occurrence 1)]: • Vulnerability-management and penetration-testing cadence.
+- P11394 [14. Security (occurrence 1)]: • Security log access rules for administrators.
+- P11395 [14. Security (occurrence 1)]: • User-facing security-center scope.
+- P11824 [15. Administration (occurrence 1)]: 15.23 Product Decisions Still Required
+- P11825 [15. Administration (occurrence 1)]: Before implementation is locked, Product, Engineering, Security, and Finance shall define:
+- P11826 [15. Administration (occurrence 1)]: • Subscription provider
+- P11827 [15. Administration (occurrence 1)]: • Plan catalog and pricing
+- P11828 [15. Administration (occurrence 1)]: • Proration rules
+- P11829 [15. Administration (occurrence 1)]: • Pause and cancellation semantics
+- P11830 [15. Administration (occurrence 1)]: • Trial length and trial-extension policy
+- P11831 [15. Administration (occurrence 1)]: • Refund rules
+- P11832 [15. Administration (occurrence 1)]: • Promotional-code behavior
+- P11833 [15. Administration (occurrence 1)]: • Tax-calculation provider
+- P11834 [15. Administration (occurrence 1)]: • Storage quota values
+- P11835 [15. Administration (occurrence 1)]: • Maximum upload sizes
+- P11836 [15. Administration (occurrence 1)]: • Storage-retention policies
+- P11837 [15. Administration (occurrence 1)]: • Storage-alert thresholds
+- P11838 [15. Administration (occurrence 1)]: • AI quota model
+- P11839 [15. Administration (occurrence 1)]: • AI credit reset cadence
+- P11840 [15. Administration (occurrence 1)]: • AI provider configuration boundaries
+- P11841 [15. Administration (occurrence 1)]: • Whether AI response history is user-visible
+- P11842 [15. Administration (occurrence 1)]: • Full-account export packaging and retention
+- P11843 [15. Administration (occurrence 1)]: • User-accessible audit scope
+- P11844 [15. Administration (occurrence 1)]: • Account deletion retention/destruction policy
+- P11845 [15. Administration (occurrence 1)]: • Default roles and permissions
+- P11846 [15. Administration (occurrence 1)]: • Whether custom roles are MVP or Future Scope
+- P11847 [15. Administration (occurrence 1)]: • Administrative MFA/re-authentication triggers
+- P11848 [15. Administration (occurrence 1)]: • System-monitoring retention
+- P11849 [15. Administration (occurrence 1)]: • Enterprise organization model
+- P12303 [16. Data Import (occurrence 1)]: 16.27 Product Decisions Still Required
+- P12304 [16. Data Import (occurrence 1)]: Before implementation is locked, Product, Engineering, Security, and Data teams shall define:
+- P12305 [16. Data Import (occurrence 1)]: • Exact supported MIME types
+- P12306 [16. Data Import (occurrence 1)]: • Maximum file size
+- P12307 [16. Data Import (occurrence 1)]: • Maximum archive size
+- P12308 [16. Data Import (occurrence 1)]: • Maximum files per import
+- P12309 [16. Data Import (occurrence 1)]: • Maximum concurrent imports
+- P12310 [16. Data Import (occurrence 1)]: • Virus/malware scanning provider
+- P12311 [16. Data Import (occurrence 1)]: • OCR provider
+- P12312 [16. Data Import (occurrence 1)]: • Speech-to-text provider
+- P12313 [16. Data Import (occurrence 1)]: • AI classification provider/model
+- P12314 [16. Data Import (occurrence 1)]: • Import job retention
+- P12315 [16. Data Import (occurrence 1)]: • Original-file retention
+- P12316 [16. Data Import (occurrence 1)]: • Quarantine retention
+- P12317 [16. Data Import (occurrence 1)]: • Connected-service MVP scope
+- P12318 [16. Data Import (occurrence 1)]: • OFW export formats supported
+- P12319 [16. Data Import (occurrence 1)]: • Excel/CSV schema-mapping behavior
+- P12320 [16. Data Import (occurrence 1)]: • ICS recurrence handling
+- P12321 [16. Data Import (occurrence 1)]: • Duplicate confidence thresholds
+- P12322 [16. Data Import (occurrence 1)]: • Merge/replace semantics
+- P12323 [16. Data Import (occurrence 1)]: • Image-similarity support
+- P12324 [16. Data Import (occurrence 1)]: • Whether partial approval is supported
+- P12325 [16. Data Import (occurrence 1)]: • Timeline creation rules for imported records
+- P12326 [16. Data Import (occurrence 1)]: • Contact auto-creation rules
+- P12327 [16. Data Import (occurrence 1)]: • Import rollback behavior
+- P12328 [16. Data Import (occurrence 1)]: • Import cancellation behavior after partial finalization
+- P12329 [16. Data Import (occurrence 1)]: • Performance targets
+- P12750 [17. Analytics (occurrence 1)]: 17.30 Product Decisions Still Required
+- P12751 [17. Analytics (occurrence 1)]: Before implementation is locked, Product and Engineering shall define:
+- P12752 [17. Analytics (occurrence 1)]: • Exact metric catalog
+- P12753 [17. Analytics (occurrence 1)]: • Metric formulas not owned by source modules
+- P12754 [17. Analytics (occurrence 1)]: • Exchange Success Rate formula
+- P12755 [17. Analytics (occurrence 1)]: • Average Response Time formula
+- P12756 [17. Analytics (occurrence 1)]: • Compliance metric definitions
+- P12757 [17. Analytics (occurrence 1)]: • Court-ordered requirement data source
+- P12758 [17. Analytics (occurrence 1)]: • Default date ranges
+- P12759 [17. Analytics (occurrence 1)]: • Comparison-period rules
+- P12760 [17. Analytics (occurrence 1)]: • Supported chart types per metric
+- P12761 [17. Analytics (occurrence 1)]: • Chart library
+- P12762 [17. Analytics (occurrence 1)]: • Drill-down MVP scope
+- P12763 [17. Analytics (occurrence 1)]: • Saved-view limits
+- P12764 [17. Analytics (occurrence 1)]: • Custom dashboard limits
+- P12765 [17. Analytics (occurrence 1)]: • Export formats
+- P12766 [17. Analytics (occurrence 1)]: • Cache strategy
+- P12767 [17. Analytics (occurrence 1)]: • Cache invalidation
+- P12768 [17. Analytics (occurrence 1)]: • Pre-aggregation strategy
+- P12769 [17. Analytics (occurrence 1)]: • Performance targets
+- P12770 [17. Analytics (occurrence 1)]: • AI insight generation cadence
+- P12771 [17. Analytics (occurrence 1)]: • Whether AI insights are proactive or user-requested
+- P12772 [17. Analytics (occurrence 1)]: • Analytics audit events
+- P12773 [17. Analytics (occurrence 1)]: • Enterprise analytics roadmap
+- P13242 [18. Mobile Application (occurrence 1)]: 18.31 Product Decisions Still Required
+- P13243 [18. Mobile Application (occurrence 1)]: Before implementation is locked, Product, Engineering, Security, and Mobile teams shall define:
+- P13244 [18. Mobile Application (occurrence 1)]: • Minimum supported iOS version
+- P13245 [18. Mobile Application (occurrence 1)]: • Minimum supported Android version
+- P14238 [19. Parenting Plan Management (occurrence 1)]: 19.36 Product Decisions Still Required
+- P14239 [19. Parenting Plan Management (occurrence 1)]: • Exact supported file types and file-size limits.
+- P14240 [19. Parenting Plan Management (occurrence 1)]: • OCR provider and fallback behavior.
+- P14241 [19. Parenting Plan Management (occurrence 1)]: • AI extraction provider and model-version retention.
+- P14242 [19. Parenting Plan Management (occurrence 1)]: • Rule confidence thresholds.
+- P14243 [19. Parenting Plan Management (occurrence 1)]: • Whether low-confidence rules require special review treatment.
+- P14244 [19. Parenting Plan Management (occurrence 1)]: • Exact document and rule status taxonomy.
+- P14245 [19. Parenting Plan Management (occurrence 1)]: • Whether activation occurs per rule, per section, or per document.
+- P14246 [19. Parenting Plan Management (occurrence 1)]: • Whether multiple Parenting Plans may be active for different children simultaneously.
+- P14247 [19. Parenting Plan Management (occurrence 1)]: • How joint cases with different child-specific schedules are represented.
+- P14248 [19. Parenting Plan Management (occurrence 1)]: • Default rule-precedence hierarchy.
+- P14249 [19. Parenting Plan Management (occurrence 1)]: • Whether users may manually override calculated precedence.
+- P14250 [19. Parenting Plan Management (occurrence 1)]: • How conflicting active orders are handled.
+- P14251 [19. Parenting Plan Management (occurrence 1)]: • Business-day calculation rules and holiday calendars.
+- P14252 [19. Parenting Plan Management (occurrence 1)]: • Timezone and daylight-saving behavior.
+- P14253 [19. Parenting Plan Management (occurrence 1)]: • School-calendar source and school-break resolution.
+- P14254 [19. Parenting Plan Management (occurrence 1)]: • Exact holiday taxonomy and custom-holiday behavior.
+- P14255 [19. Parenting Plan Management (occurrence 1)]: • Schedule-generation horizon.
+- P14256 [19. Parenting Plan Management (occurrence 1)]: • Regeneration behavior after plan changes.
+- P14257 [19. Parenting Plan Management (occurrence 1)]: • Whether generated Calendar events are canonical or projections.
+- P14258 [19. Parenting Plan Management (occurrence 1)]: • Whether users may manually edit generated events and how those overrides are preserved.
+- P14259 [19. Parenting Plan Management (occurrence 1)]: • Phase eligibility calculation rules.
+- P14260 [19. Parenting Plan Management (occurrence 1)]: • Whether phase progression can ever be activated automatically.
+- P14261 [19. Parenting Plan Management (occurrence 1)]: • Parenting Time compliance definitions.
+- P14262 [19. Parenting Plan Management (occurrence 1)]: • Make-up parenting-time calculation rules.
+- P14263 [19. Parenting Plan Management (occurrence 1)]: • Vacation entitlement calculation rules.
+- P14264 [19. Parenting Plan Management (occurrence 1)]: • Notification defaults and reminder timing.
+- P14265 [19. Parenting Plan Management (occurrence 1)]: • Search indexing behavior for raw legal text.
+- P14266 [19. Parenting Plan Management (occurrence 1)]: • Retention policy for superseded plans and extracted artifacts.
+- P14267 [19. Parenting Plan Management (occurrence 1)]: • Whether original Parenting Plan files are stored directly in this module or referenced through Evidence Management.
+- P14268 [19. Parenting Plan Management (occurrence 1)]: • Export formats and export-size limits.
+- P14269 [19. Parenting Plan Management (occurrence 1)]: • Professional sharing and verification workflows.
+- P14270 [19. Parenting Plan Management (occurrence 1)]: • Which Future Enhancements remain outside MVP.
+- P14272 [19. Parenting Plan Management (occurrence 1)]: Change Log
+- P14273 [19. Parenting Plan Management (occurrence 1)]: Date
+- P14274 [19. Parenting Plan Management (occurrence 1)]: Change
+- P14275 [19. Parenting Plan Management (occurrence 1)]: Notes

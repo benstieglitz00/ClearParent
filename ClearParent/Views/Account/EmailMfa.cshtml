@@ -1,0 +1,8 @@
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+<!doctype html><html lang="en"><head><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Email MFA — ClearParent</title></head><body><main>
+<a href="/Account/Preferences">Preferences</a><h1>Email multi-factor authentication</h1><div asp-validation-summary="All" role="alert"></div>
+<p>Enabling MFA requires a verification code after your password. You can use your verified email or a configured authenticator. Disabling MFA disables the second-factor requirement for all methods.</p>
+<form method="post" asp-action="EmailMfa"><p><label for="password">Current password</label> <input id="password" name="password" type="password" autocomplete="current-password" required /></p>
+<p><label><input type="checkbox" name="enabled" value="true"/> Require MFA</label></p><button type="submit">Update MFA</button></form>
+<p><a href="/Identity/Account/Manage/TwoFactorAuthentication">Manage authenticator and recovery codes</a></p>
+</main></body></html>

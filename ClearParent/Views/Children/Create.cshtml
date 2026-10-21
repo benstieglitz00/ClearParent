@@ -1,0 +1,8 @@
+@model ClearParent.Controllers.ChildInput
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+<!doctype html><html lang="en"><head><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Add child - ClearParent</title></head><body>
+<h1>Add child</h1><form asp-action="Create" method="post"><div asp-validation-summary="All" role="alert"></div>
+<p><label asp-for="Name"></label> <input asp-for="Name" required maxlength="100"/></p>
+<p><label asp-for="Birthday"></label> <input asp-for="Birthday" type="date"/></p>
+<button type="submit">Add child</button> <a asp-action="Index">Cancel</a></form>
+</body></html>

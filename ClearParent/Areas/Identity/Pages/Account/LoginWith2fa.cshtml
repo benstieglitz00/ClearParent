@@ -1,0 +1,13 @@
+@page
+@model ClearParent.Areas.Identity.Pages.Account.LoginWith2faModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{ Layout = null; }
+<!doctype html><html lang="en"><head><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Verify sign-in — ClearParent</title></head><body><main>
+<h1>Verify your sign-in</h1><p role="status">@Model.Status</p><div asp-validation-summary="All" role="alert"></div>
+<form method="post"><input type="hidden" asp-for="RememberMe"/><input type="hidden" asp-for="ReturnUrl"/>
+<p><label asp-for="Input.Code">Verification code</label> <input asp-for="Input.Code" autocomplete="one-time-code" inputmode="numeric" required /></p>
+<p><label><input asp-for="Input.UseEmail"/> This code came from email</label></p>
+<p><label><input asp-for="Input.TrustDevice"/> Trust this device</label></p><button type="submit">Verify</button></form>
+<form method="post" asp-page-handler="SendEmail"><input type="hidden" asp-for="RememberMe"/><input type="hidden" asp-for="ReturnUrl"/><button type="submit">Send a code to my verified email</button></form>
+<p><a href="/Identity/Account/LoginWithRecoveryCode">Use a recovery code</a></p>
+</main></body></html>

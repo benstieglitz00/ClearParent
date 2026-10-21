@@ -1,0 +1,42 @@
+# Progress
+
+## 2026-10-20 — Phase 0 inventory slice
+- Located handoff guidance/docs under `ClearParent/ClearParent/`; original Word bytes preserved.
+- Inspected tracked solution, .NET 10 Razor Pages starter, Git state, configuration, and absence of tests. Existing starter builds with zero warnings/errors; baseline `dotnet test` has no test projects.
+- Added reproducible source inventory (`python tools/inventory_spec.py`): all 14,291 source paragraphs, including table cells; 12,058 nonempty records with source paragraph/section, original requirement IDs, implementation and test slots. Both Search occurrences and inconsistent Journal heading numbers remain individually locatable.
+- Initially extracted 577 candidate decision-section paragraphs (corrected to 549 below) into DecisionRegister.md. Inventory is an extraction, not a claim that every paragraph is an independent MVP requirement. Manual scope/dependency audit and complete requirement-to-test mapping remain open.
+- SQL Express service runs. Both normal and shared-memory `sqlcmd` attempts failed with TLS/security-package errors. No database created, changed, or deleted.
+- Package restore initially failed TLS; cached 10.0.11 packages restore successfully with `--ignore-failed-sources -p:NuGetAudit=false`. This flag is an offline restore workaround, not a release security waiver.
+
+Phase 0 remains incomplete: SQL connection validation and detailed requirements audit still pending. Phase 1 work underway.
+
+## 2026-10-20 — Phase 1 account foundation slices
+
+- Added Identity EF SQL Server persistence, unique normalized email index, role extensibility, verified-email requirement, reset/confirmation token configuration, secure cookies, HTTPS-only account paths, CSRF, per-IP rate limiting, lockout defaults, and no-store account responses.
+- Added CAPTCHA-free registration with honeypot and rate limiting, required names, versioned terms/privacy acceptance, pending-account verification email, and explicit delivery-failure feedback. No external messages were sent. Registration requires configured approved legal URLs/version and SMTP transport.
+- Added email-code MFA page, authenticator/recovery management through Identity, and password-confirmed MFA enable/disable. Full MFA HTTP/TOTP/trusted-device acceptance remains pending.
+- Added persisted device sessions, activity tracking, per-request security-stamp and session validation, individual revoke/sign-out-all actions, basic security history, persisted zone/language/AI preferences, and server-side ownership checks.
+- Added audit events for account creation/verification, password reset/change, primary email changes, MFA changes, login attempts, logout, sessions and preferences. Identity operations and their audit records share relational transactions. Audit changes/deletion are rejected in EF and by a SQL trigger migration. Full audit coverage and before/after contact history remain pending.
+- Generated five forward EF migrations and a SQL review script. SQL update against a new dedicated `ClearParent_Dev_20261020` target failed before creation: server requires encryption but the sandbox client reports encryption unsupported. No downgrade/drop/production deployment was attempted.
+- Original starter preserved; added MVC without replacing Razor Pages. Integration testing caught and fixed the missing Identity login partial and test-host configuration problems.
+- Validation: final `dotnet build ClearParent.slnx --no-restore` succeeded with zero warnings/errors; final `dotnet test ClearParent.slnx --no-build` passed all 10 tests, 0 failed/0 skipped, including the verified-login HTTP extension. `dotnet ef migrations has-pending-model-changes --project ClearParent --no-build` reports no model changes; forward script regeneration succeeds. `git diff --check` passes. Tests cover confirmation/reset integrity, recovery-code reuse, email codes, pending registration/consent/honeypot, actual cookie authentication/revocation, CSRF, cross-user access and append-only EF audit behavior. EF InMemory is not a substitute for SQL Server integration tests.
+- NuGet flagged vulnerable transitive Pkcs 9.0.11; pinned 9.0.21 from the official NuGet endpoint. Full vulnerability audit command remains blocked by Windows TLS. Release audit remains required.
+- Updated source inventory parser: 549 actual decision-section paragraphs, 20 module occurrences covering all 19 numbered modules. Corrected earlier extraction over-count that included new-module preambles. Both Search occurrences remain distinct; Report Builder heading is embedded at the end of the preceding source paragraph.
+- Added Traceability.md and Development.md with precise coverage, configuration, limitations and remaining acceptance work.
+- Commit attempt failed: `.git/index.lock`: Permission denied. The permission profile grants read-only `.git` access, and escalation is unavailable. No local commit exists; all changes remain uncommitted.
+
+Status: Phase 0 and Phase 1 IN PROGRESS, not complete. Later phases have not been started because the validated SQL/account foundation is incomplete. Remaining Phase 1 work includes full profiles/contact history/preferences, security-center completeness, full MFA/session/recovery HTTP acceptance, SQL integration, encrypted-at-rest/key-management validation, email retry, and audit completeness. Phase 5 billing remains scheduled per ImplementationPlan.md. Manual full requirement triage/acceptance mapping is incomplete; extraction must not be mistaken for completed review.
+
+
+## 2026-10-20 continuation: SQL, account profile and Phase 2
+
+- Git origin confirmed: https://github.com/benstieglitz00/ClearParent.git. Explicit deny ACL entries on .git block index.lock creation and staging. Permissions unchanged; manual review/stage/commit commands are in Development.md. No commit or push.
+- SQL Express runs; ForceEncryption=0, TCP disabled and Browser stopped. ODBC with certificate trust fails encryption/security-package initialization; EF update against dedicated ClearParent_Dev_20261020 fails with SqlClient error 20 before schema inspection. Client failure remains unresolved. No SQL settings, services, policies, permissions or existing records changed; no migrations applied.
+- Added shared SQL connection policy: encryption required; certificate bypass only for local Development connections. Production design tooling has no local fallback. Development runtime now has a credential-free local connection. Eight policy test cases pass.
+- Added own-account first/last name editing with an audit event saved atomically. HTTP tests check persistence, audit and ignored forged ownership fields. Remaining profile/contact acceptance stays open.
+- Started Phase 2 at explicit user direction: owned canonical child profiles, authenticated list/create forms, required name/optional birthday, future-date validation, audit, query/write ownership enforcement, HTTPS/no-store handling, additive ChildProfiles migration. Editing/versioning/deletion and evidence remain unimplemented. Reversible defaults in OpenDecisions.md.
+- HTTP testing caught and repaired the Children route inheriting the account default action. New tests cover form submission, CSRF denial, HTML encoding, anonymous access, cross-account tracked-write rejection, ownership and invalid birthdays.
+- Validation: solution build succeeded with 0 warnings/errors; final dotnet test ClearParent.slnx --no-restore passed 23 tests, 0 failed/0 skipped, including final middleware changes. EF has-pending-model-changes reports no changes with DOTNET_ENVIRONMENT=Development. Idempotent SQL script regenerated for all six migrations. git diff --check passes. InMemory/TestServer testing does not verify live SQL constraints/transactions/triggers.
+- Added tools/Verify-LocalDatabase.ps1: read-only encryption, expected migration/table and enabled audit-trigger assertions, plus column/index inspection. AST parsing succeeds. Machine signed-script policy blocks execution; no bypass or policy change. Development.md documents normal-terminal SQL checks and approved execution notes.
+
+Phase 0/1 remain IN PROGRESS: live SQL validation, full requirement triage, profile/contact history, complete MFA/recovery/session acceptance, delivery retry and operational encryption/key/backup gates remain open. Source 1.29 billing is still scheduled in Phase 5; account foundation is not full User Management acceptance. Phase 2 STARTED with child create/list only. No deployment or external email.

@@ -1,0 +1,8 @@
+@model IReadOnlyList<ClearParent.Data.ChildProfile>
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+<!doctype html><html lang="en"><head><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Children - ClearParent</title></head><body>
+<nav><a href="/Account/Preferences">My account</a></nav><h1>Children</h1>
+<p><a asp-action="Create">Add child</a></p>
+@if (Model.Count == 0) { <p>No child profiles yet.</p> }
+<ul>@foreach (var child in Model) { <li>@child.Name @if (child.Birthday is { } birthday) { <span> @birthday.ToString("yyyy-MM-dd")</span> }</li> }</ul>
+</body></html>

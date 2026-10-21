@@ -1,0 +1,6 @@
+@model List<ClearParent.Data.AuditEvent>
+<!doctype html><html lang="en"><head><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Security history — ClearParent</title></head><body>
+<a href="/Account/Preferences">Preferences</a><h1>Security history</h1><p>Latest 100 recorded account events.</p>
+<table><thead><tr><th>UTC timestamp</th><th>Action</th><th>Result</th><th>IP address</th><th>Device</th></tr></thead><tbody>
+@foreach(var item in Model){<tr><td>@item.Timestamp.ToString("u")</td><td>@item.Action</td><td>@(item.Success ? "Success" : "Failure")</td><td>@item.IpAddress</td><td>@item.Device</td></tr>}
+</tbody></table></body></html>
